@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="title text-center mt-3">
+        Bienvenue sur votre Monitor
+      </h2>
+      <p>{{date | date :'dd-mm-yyyy'}}</p>
+    </div>
+    <div class="col-xs-12 col-md-6 mt-2  " *ngFor="let membre of membre">
+    
+      <app-membre [nom]="membre.prenom" [Prenom]="membre.nom" [isEnForme]= 
+      "membre.enforme"></app-membre>
+    </div>
+    <div class="row mx-2"> 
+      <button class="btn btn-primary mt-2" (click)="onUpdate()">
+        Mettre a jour
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+
+<div class="card" style="width: 18rem;">
+       
+        <div class="card-body ">
+           <div class="d-flex">
+              <img src="./assets/img/use.jpg" class="img-responsive" alt="User"  width="80">
+             <div class="ms-3">
+                <h5 class="card-title" [ngClass]="{enforme: isEnForme==true}">
+                    {{ nom | uppercase }} {{ Prenom }} </h5>
+                <span class="badge bg-success" *ngIf=isEnForme> En forme </span>
+                <span class="badge bg-danger" *ngIf=!isEnForme> malade </span>     
+             </div>
+           </div>
+           <hr>
+           <div class="d-flex justify-content-between">
+            <span class="text-center">
+                <i class="fa fa-circle"></i><br>
+                <b style="font: size 1.5rem;">70</b>Kg
+            </span>
+            <span class="text-center">
+                <i class="fa fa-circle"></i><br>
+                <b style="font: size 1.5rem;">70</b>Kg
+            </span>
+            <span class="text-center">
+                <i class="fa fa-circle"></i><br>
+                <b style="font: size 1.5rem;">70</b>Kg
+            </span>
+           </div>
+        </div>
+      </div>
+
+
